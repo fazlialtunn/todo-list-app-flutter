@@ -26,13 +26,13 @@ class ToDoTile extends StatelessWidget {
           motion: StretchMotion(),
           children: [
             SlidableAction(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(24),
               onPressed: deleteTask,
               icon: Icons.delete,
               backgroundColor: Colors.red,
             ),
             SlidableAction(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(24),
               onPressed: editTask,
               icon: Icons.edit,
               backgroundColor: Colors.blue,
@@ -60,7 +60,7 @@ class ToDoTile extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(24),
           ),
         ),
       ),

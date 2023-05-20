@@ -12,6 +12,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       onPressed: onPressed,
       child: Text(text),
       color: Colors.white,

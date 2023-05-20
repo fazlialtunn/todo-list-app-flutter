@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
   void changeTask(String newText, int index) {
     setState(() {
       db.toDoList[index][0] = newText;
+      _controller.clear();
     });
     Navigator.of(context).pop();
     db.updateDataBase();

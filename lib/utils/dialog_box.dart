@@ -16,6 +16,9 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+      icon: Icon(Icons.edit),
+      elevation: 36,
       backgroundColor: Colors.white,
       content: Container(
         height: 120,
@@ -26,14 +29,16 @@ class DialogBox extends StatelessWidget {
                 ? TextField(
                     controller: controller,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24)),
                       hintText: "Edit task",
                     ),
                   )
                 : TextField(
                     controller: controller,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24)),
                       hintText: "Add a new task",
                     ),
                   ),
